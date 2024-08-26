@@ -1,0 +1,25 @@
+GET http://localhost:5000/ HTTP/1.1
+
+###
+
+GET http://localhost:5000/profile/123 HTTP/1.1
+
+###
+
+POST http://localhost:5000/sign-in HTTP/1.1
+content-type: application/json
+
+{
+    "name": "rest client",
+    "action": "sign-in"
+}
+###
+
+POST http://localhost:5000/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "rest client", 
+    "email": "rest.clinet@gmail.com", 
+    "password": "supersecret"
+}
